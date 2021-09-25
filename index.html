@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Annubis</title>
+    <link rel="stylesheet" href="css/container.css" />
+    <link rel="stylesheet" href="css/main-estilos.css" />
+    <link rel="stylesheet" href="css/descripcion.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/desplegable.js"></script>
+    <script src="js/mostrarTexto.js"></script>
+    <script src="js/inicio.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/hover.js"></script>
+    <script></script>
+  </head>
+  <body>
+    <section id="inicio">
+      <div>
+        <center>
+          <h2>Todos los libros e histórias que están apunto de mostrarse són todos escritos por Ángel Lluís Novo Fernando</h2>
+          <br>
+          <h3>Las portadas són plantillas hechas en <a  target="_blank" href="https://www.canva.com/">Canva</a></h3>
+          <button id="mostra">Ir a inicio</button>
+        </center>
+      </div>
+  </section>
+  <section id="nav">
+    <div class="nav" id="nav">
+      <a href="index.html" id="logo" title="Ir a la página principal"><img src="img/Annubis.png" alt="Annubis"></a>
+      <a href="independientes.html" title="Ir a la sección de independientes">Independientes</a>
+      <a href="sagas.html" title="Ir a la sección de sagas">Sagas</a>
+      <a id="desp" class="header-img">↓</a>
+      <a id="coche"><img src="img/coche.webp" title="A medida que se va haciendo scroll, la posición del coche varia" alt="Coche"></a>
+    </div>
+    <div class="navSec" id="navSec">
+      <a href="independientes.html">Independientes</a><br />
+      <a href="sagas.html">Sagas</a>
+    </div>
+  </section>
+    <section id="contenido">
+        <div id="container">
+          <div id="novedades">
+            <h1>Añadidos recientemente</h1>
+                <div class="foto">
+                      <div
+                        class="libro"
+                        id="1"
+                        title="Al hacer click se desplegará la sinopsis"
+                      >
+                        <img
+                          src="img/libros/oceanum.jpg"
+                          alt="In Ocean"
+                        />
+                        <div class="desc">
+                          <p>
+                            <center><b>In Ocean</b></center><br />
+                            Un futuro distópico en el que hemos tenido que adaptarnos a los tiempos,
+                            la superficie ya no es habitable y hemos tenido que hacer colonias en el
+                            fondo del mar.
+                          </p>
+                          <a href="https://www.wattpad.com/story/262606017-in-oceanum" target="_blank">Leeme</a>
+                        </div>
+                      </div>
+                      <div class="libro" id="2">
+                        <img
+                          src="img/libros/Agnosia.jpg"
+                          alt="Dichosa agnosia"
+                          title="Al hacer click se desplegará la sinopsis"
+                        />
+                        <div class="desc">
+                          <p>
+                            <center><b>Dichosa Agnosia</b></center><br />
+                            Un chico dice oir cosas, pero una realidad mas oscura se esconde tras sus palabras.
+                          
+                          </p>
+                          <a href="https://www.wattpad.com/story/259745754-dichosa-agnosia" target="_blank">Leeme</a>
+                        </div>
+                      </div>
+                      <div class="libro" id="3">
+                        <img
+                          src="img/libros/bimestral.jpg"
+                          alt="Correo bimestral"
+                          title="Al hacer click se desplegará la sinopsis"
+                        />
+                        <div class="desc">
+                          <p>
+                            <center><b>Correo Bimestral</b></center><br />
+                            Un adolescente recibe una carta cada dos meses de una persona anónima, pero ya es hora
+                            de conocer a esa persona.
+                          </p>
+                          <a href="https://www.wattpad.com/story/259745233-correo-bimestral" target="_blank">Leeme</a>
+                        </div>
+                      </div>
+                      <div class="libro" id="4">
+                        <img
+                          src="img/libros/1863.jpg"
+                          alt="1863"
+                          title="Al hacer click se desplegará la sinopsis"
+                        />
+                        <div class="desc">
+                          <p>
+                            <center><b>1863</b></center><br />
+                            Londres no está preparado para descubrir a un famoso asesino sanguinario, y está aun menos 
+                            preparado para saber que el detective tendrá que trabajar con un ser inmortal para pararle 
+                            los pies.
+                          </p>
+                          <a href="#">No disponible</a>
+                        </div>
+                      </div>
+                      <div class="libro" id="5">
+                        <img
+                          src="img/libros/doce.jpg"
+                          alt="1863"
+                          title="Al hacer click se desplegará la sinopsis"
+                        />
+                        <div class="desc">
+                          <p>
+                            <center><b>Los doce</b></center><br />
+                            El mundo no es lo que parece, no es mas que el fruto de otro planeta habitado por entidades
+                            superiores, que al aburrirse, deciden crear doce entidades inmortales y abandonarlas a su 
+                            suerte por el frío universo.
+                          </p>
+                          <a href="#">No disponible</a>
+                        </div>
+                      </div>
+                      <div class="libro" id="6">
+                        <img
+                          src="img/libros/mortis.jpg"
+                          alt="1863"
+                          title="Al hacer click se desplegará la sinopsis"
+                        />
+                        <div class="desc">
+                          <p>
+                            <center><b>Vigor Mortis</b></center><br />
+                            Un chico pierde a su padre en un accidente de coche, pero este descubre que su padre no era quien
+                            decia ser, sinó un billonario con varias propiedades.
+                            El chico decide ir a vivir a uno de sus bosques con su pareja, en el que hay una cabaña, lo que no saben
+                            esque por ahí tambien vive un asesino desconocido.
+                          </p>
+                          <a href="#">No disponible</a>
+                        </div>
+                      </div>
+
+                  </div>                  
+          </div>
+
+          <div id="trending">
+            <h1>Más visitados</h1>
+            <div class="foto">
+                <div
+                  class="libro"
+                  id="7"
+                  title="Al hacer click se desplegará la sinopsis"
+                >
+                  <img
+                    src="img/libros/Novum-Hominem.jpg"
+                    alt="Novum Hominem"
+                  />
+                  <div class="desc">
+                    <p>
+                      <center><b>Novum Hominem</b></center><br />
+                      Un mundo post apocalíptico en el que una pareja tendrá que
+                      liderar un refugio hacia la supervivencia
+                    </p>
+                    <a href="https://www.wattpad.com/story/259748331-novum-hominem" target="_blank">Leeme</a>
+                  </div>
+                </div>
+                <div class="libro" id="8">
+                  <img
+                    src="img/libros/Humanity-Renascitur.jpg"
+                    alt="Humanity Renascitur"
+                    title="Al hacer click se desplegará la sinopsis"
+                  />
+                  <div class="desc">
+                    <p>
+                      <center><b>Humanity Renascitur</b></center><br />
+                      Un mundo post apocalíptico, una joven se encuentra sola,
+                      desorientada y sin memória, y tendráa que hacer amigos si
+                      quiere sobrevivir
+                    </p>
+                    <a href="https://www.wattpad.com/story/259750421-humanity-renascitur" target="_blank">Leeme</a>
+                  </div>
+                </div>
+                <div class="libro" id="9">
+                  <img
+                    src="img/libros/De morte hominis(Humanity Renascitur 2) (1).jpg"
+                    alt="De morte hominis"
+                    title="Al hacer click se desplegará la sinopsis"
+                  />
+                  <div class="desc">
+                    <p>
+                      <center><b>De Morte Hominis</b></center><br />
+                      Alida tendrá que confiar en los que tiene a su lado para derrotar la amenaza
+                      que le aguarda.
+                    </p>
+                    <a href="https://www.wattpad.com/story/259752169-de-morte-hominis" target="_blank">Leeme</a>
+                  </div>
+                </div>
+                <div class="libro" id="10">
+                  <img
+                    src="img/libros/microrelatos.jpg"
+                    alt="Trece microrelatos"
+                    title="Al hacer click se desplegará la sinopsis"
+                  />
+                  <div class="desc">
+                    <p>
+                      <center><b>Trece microrelatos</b></center><br />
+                      Un conjunto de trece microrelatos totalmente distintos, diferentes géneros
+                      y detalles que te harán leerlos mas de una vez.
+                    </p>
+                    <a href="#">No disponible</a>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+    </section>
+    <footer>
+      <p>Web realizada por Ángel Lluís Novo fernando</p>
+      <p>Copyright 2021-2021</p>
+    </footer>
+  </body>
+</html>

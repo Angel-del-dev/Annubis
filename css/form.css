@@ -1,0 +1,68 @@
+#divForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+input,
+textarea {
+    border-radius: 5px;
+}
+/* Todos los input menos los tipo submit o tipo radio contienen unas medidas en concreto */
+input:not(input[type= submit],input[type=radio]) {
+    width: 40vw;
+    height: 2vh;
+}
+
+textarea {
+    resize: vertical;
+}
+
+label,
+input {
+    padding: 5px;
+}
+
+h2 {
+    text-align: center;
+    color:white;
+}
+
+button {
+    width: 30vw;
+    border-radius: 5px;
+}
+/* El div tiene que ser circular */
+#caja {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+}
+/* Este div tiene que ser circular y solo mostrarse el borde de arriba con un color predefinido */
+#elemento {
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    border-top: 6px solid rgb(18, 144, 18);    
+}
+/* Clase para activar la animación */
+.rotarCambio {
+    transform: rotate(0);
+    animation: 1s rotar linear infinite;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(720deg);
+    }
+}
+
+.conf {
+    width: 40px;
+    height: 35px;
+}

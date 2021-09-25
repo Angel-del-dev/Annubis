@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #333;
+    font-size: 14px;
+    overflow-x: hidden;
+    width: 100vw;
+  }
+  
+  .nav {
+    overflow: hidden;
+    background-color: rgb(27, 27, 27);
+    position: fixed;
+    width: 100%;
+    z-index:20; 
+  }
+/* El contenedor hermano a la barra de navegación tiene un padding*/
+  #nav + #contenido {
+    padding-top: 6vh;
+  }
+
+  #contenido {
+    padding-bottom: 6vh;
+  }
+  
+  .nav a {
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: auto;
+    height: 2vh;
+  }
+  /* todos los a dentro de nav menos el primero o #contacto contienen padding y color */
+  .nav a:not(.nav a:first-of-type,#contacto) {
+    color: #f2f2f2;
+    padding: 14px 16px;
+  }
+  /* todos los a dentro de nav menos el primero o #contacto tienen una medida */
+  .nav a:not(a:first-of-type,#contacto) {
+    width: 13%;
+  }
+  /* todos los a dentro de nav menos el primero, #contacto o el ultimo, al hacer hover se les da un color de fondo y un color de letra*/
+  .nav a:hover:not(a:first-of-type,a:last-of-type,#contacto img),
+  #navSec a:hover {
+    background-color: #ddd;
+    color: #000;
+  }
+
+  #desp {
+      display: none;
+  }
+
+  header-img img {
+    width: 50px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav a:not(:first-child){display: none;}
+    .nav #desp {display: block;}
+    .nav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav {position: relative;}
+    .nav .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+#desp{
+    cursor: pointer;
+}
+
+#navSec {
+    background-color: rgb(27, 27, 27);
+    text-align: center;
+    z-index:20; 
+}
+
+#navSec *,
+#navSec *:visited {
+    color: #FAFAFF;
+    text-decoration: none;
+    width: 100%;
+
+}
+
+#logo img,
+#contacto img{
+  width: 50px;
+}
+
+#inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #FAFAFF;
+}
+
+#inicio a {
+  text-align: center;
+  color: lightblue;
+  text-decoration: none;
+}
+
+footer {
+  background-color: rgb(27, 27, 27);
+  color: #FAFAFF;
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#coche img {
+  height: 26px;
+}
+
+#coche {
+  width: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.active {
+    background-color: rgb(77, 76, 76);
+}
+
+b {
+  bottom: 10px;
+}
+  /* Cursor personalizado de 32x32 y en el caso de que falle, pointer */
+.libroH,
+.libroH img,
+.desc {
+  //cursor:url("../img/Handwriting.cur") 32 32, pointer;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  float: left;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.activeNav{
+  text-decoration: underline;
+}
+/* Animación de latido del corazón en la foto de contacto */
+#contacto {
+  animation: 1s latido infinite alternate;
+}
+
+@keyframes latido {
+  0% {
+    transform: scale(1.1);
+  }
+  
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}

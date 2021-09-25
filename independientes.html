@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microrelatos</title>
+    <link rel="stylesheet" href="css/container.css" />
+    <link rel="stylesheet" href="css/main-estilos.css" />
+    <link rel="stylesheet" href="css/descripcion.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/desplegable.js"></script>
+    <script src="js/mostrarTexto.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/hover.js"></script>
+    <script src="js/genero.js"></script>
+  </head>
+  <body>
+  <section id="nav">
+    <div class="nav" id="nav">
+      <a href="index.html" id="logo" title="Ir a la página principal"><img src="img/Annubis.png" alt="Annubis"></a>
+      <a href="independientes.html" class="active" title="Ir a la sección de independientes">Independientes</a>
+      <a href="sagas.html" title="Ir a la sección de sagas">Sagas</a>
+      <a id="desp" class="header-img">↓</a>
+      <a id="coche"><img src="img/coche.webp" title="A medida que se va haciendo scroll, la posición del coche varia" alt="Coche"></a>
+    </div>
+    <div class="navSec" id="navSec">
+      <a href="independientes.html" class="active">Independientes</a><br />
+      <a href="sagas.html">Sagas</a>
+    </div>
+  </section>
+    <section id="contenido">
+        <div id="container">
+          <div id="novedades">
+            <h1 title="Doble click para enseñar o esconder las categorias">Añadidos recientemente<span><nav><ul id="ul"></ul></nav></span></h1>
+                <div class="foto">
+                      <div
+                        class="libro Terror"
+                        id="1"
+                        title="Al hacer click se desplegará la sinopsis"
+                      >
+                        <img
+                          src="img/libros/oceanum.jpg"
+                          alt="In Ocean"
+                        />
+                        <div class="desc">
+                          <p>
+                            <center><b>In Ocean</b></center><br />
+                            Un futuro distópico en el que hemos tenido que adaptarnos a los tiempos,
+                            la superficie ya no es habitable y hemos tenido que hacer colonias en el
+                            fondo del mar.
+                          </p>
+                          <a href="https://www.wattpad.com/story/262606017-in-oceanum" target="_blank">Leeme</a>
+                        </div>
+                      </div>
+                      <div class="libro Suspense" id="2">
+                        <img
+                          src="img/libros/Agnosia.jpg"
+                          alt="Dichosa agnosia"
+                          title="Al hacer click se desplegará la sinopsis"
+                        />
+                        <div class="desc">
+                          <p>
+                            <center><b>Dichosa Agnosia</b></center><br />
+                            Un chico dice oir cosas, pero una realidad mas oscura se esconde tras sus palabras.
+                          </p>
+                          <a href="https://www.wattpad.com/story/259745754-dichosa-agnosia" target="_blank">Leeme</a>
+                        </div>
+                      </div>
+                      <div class="libro Suspense" id="3">
+                        <img
+                          src="img/libros/bimestral.jpg"
+                          alt="Correo bimestral"
+                          title="Al hacer click se desplegará la sinopsis"
+                        />
+                        <div class="desc">
+                          <p>
+                            <center><b>Correo Bimestral</b></center><br />
+                            Un adolescente recibe una carta cada dos meses de una persona anónima, pero ya es hora
+                            de conocer a esa persona.
+                          </p>
+                          <a href="https://www.wattpad.com/story/259745233-correo-bimestral" target="_blank">Leeme</a>
+                        </div>
+                      </div>
+                      <div class="libro Policíaca" id="4">
+                        <img
+                          src="img/libros/1863.jpg"
+                          alt="1863"
+                          title="Al hacer click se desplegará la sinopsis"
+                        />
+                        <div class="desc">
+                          <p>
+                            <center><b>1863</b></center><br />
+                            Londres no está preparado para descubrir a un famoso asesino sanguinario, y está aun menos 
+                            preparado para saber que el detective tendrá que trabajar con un ser inmortal para pararle 
+                            los pies.
+                          </p>
+                          <a href="#">No disponible</a>
+                        </div>
+                      </div>
+                      <div class="libro Comedia" id="5">
+                        <img
+                          src="img/libros/doce.jpg"
+                          alt="1863"
+                          title="Al hacer click se desplegará la sinopsis"
+                        />
+                        <div class="desc">
+                          <p>
+                            <center><b>Los doce</b></center><br />
+                            El mundo no es lo que parece, no es mas que el fruto de otro planeta habitado por entidades
+                            superiores, que al aburrirse, deciden crear doce entidades inmortales y abandonarlas a su 
+                            suerte por el frío universo.
+                          </p>
+                          <a href="#">No disponible</a>
+                        </div>
+                      </div>
+                      <div class="libro Terror" id="6">
+                        <img
+                          src="img/libros/mortis.jpg"
+                          alt="1863"
+                          title="Al hacer click se desplegará la sinopsis"
+                        />
+                        <div class="desc">
+                          <p>
+                            <center><b>Vigor Mortis</b></center><br />
+                            Un chico pierde a su padre en un accidente de coche, pero este descubre que su padre no era quien
+                            decia ser, sinó un billonario con varias propiedades.
+                            El chico decide ir a vivir a uno de sus bosques con su pareja, en el que hay una cabaña, lo que no saben
+                            esque por ahí tambien vive un asesino desconocido.
+                          </p>
+                          <a href="#">No disponible</a>
+                        </div>
+                      </div>           
+                      <div class="libro Terror" id="7">
+                        <img
+                            src="img/libros/ayer.jpg"
+                            alt="Luces del ayer"
+                            title="Al hacer click se desplegará la sinopsis"
+                        />
+                        <div class="desc">
+                            <p>
+                            <center><b>Luces del ayer</b></center><br />
+                              Tras quedarse sin trabajo, una viuda desesperada tendrá que mudarse a un pueblo
+                              para poder alimentar a su hijo. 
+                            </p>
+                            <a href="#">No disponible</a>
+                        </div>
+                    </div>
+                    
+                    <div class="libro Terror Comedia Suspense" id="8">
+                        <img
+                            src="img/libros/microrelatos.jpg"
+                            alt="Trece microrelatos"
+                            title="Al hacer click se desplegará la sinopsis"
+                        />
+                        <div class="desc">
+                            <p>
+                            <center><b>Trece microrelatos</b></center><br />
+                            Un conjunto de trece microrelatos totalmente distintos, diferentes géneros
+                            y detalles que te harán leerlos mas de una vez.
+                            </p>
+                            <a href="#">No disponible</a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="libro Suspense"
+                        id="9"
+                        title="Al hacer click se desplegará la sinopsis"
+                      >
+                        <img
+                          src="img/libros/Controlada.jpg"
+                          alt="Controlada"
+                        />
+                        <div class="desc">
+                          <p>
+                            <center><b>Controlada</b></center><br />
+                              Una chica con una vida normal, hasta que empieza
+                              a notar cosas raras en su entorno.
+                          </p>
+                          <a href="https://www.wattpad.com/story/262605338-controlada" target="_blank">Leeme</a>
+                        </div>
+                      </div>
+                      <div class="libro Terror" id="10">
+                        <img
+                          src="img/libros/Encerrado.jpg"
+                          alt="Encerrado"
+                          title="Al hacer click se desplegará la sinopsis"
+                        />
+                        <div class="desc">
+                          <p>
+                            <center><b>Encerrado</b></center><br />
+                              Tras ser raptado, un chico tendrá que hacerle frente a visiones, malos pensamientos y sus
+                              peores temores para poder sobrevivir hasta que alguien venga a buscarle
+                          </p>
+                          <a href="https://www.wattpad.com/story/259744128-encerrado" target="_blank">Leeme</a>
+                        </div>
+                      </div>
+                      <div class="libro Romántica" id="11">
+                        <img
+                          src="img/libros/nunca.jpg"
+                          alt="Nunca Existiré para ti"
+                          title="Al hacer click se desplegará la sinopsis"
+                        />
+                        <div class="desc">
+                          <p>
+                            <center><b>Nunca Existiré para ti</b></center><br />
+                              Un chico cree haber encontrado el amor, pero será muy difícil que la otra persona sienta lo
+                              mismo por el.
+                          </p>
+                          <a href="#">No disponible</a>
+                        </div>
+                      </div>
+                      <div class="libro Policíaca" id="12">
+                        <img
+                          src="img/libros/Presenciando.jpg"
+                          alt="Presenciando el fin"
+                          title="Al hacer click se desplegará la sinopsis"
+                        />
+                        <div class="desc">
+                          <p>
+                            <center><b>Presenciando el fin</b></center><br />
+                              Una carta llega a una comisaria dedicada al jefe de policía, la carta contiene unos puzzles que cada vez dan mas pistas
+                              sobre unas desapariciones.
+                          </p>
+                          <a href="#">No disponible</a>
+                        </div>
+                      </div>
+                      <div class="libro Terror Suspense" id="13">
+                        <img
+                          src="img/libros/interrogante.jpg"
+                          alt="?"
+                          title="Al hacer click se desplegará la sinopsis"
+                        />
+                        <div class="desc">
+                          <p>
+                            <center><b>?</b></center><br />
+                              Una aldea tiene una leyenda, cuando llega la niebla vendrá un hombre malo e intentará llevarse a todos los
+                              que pueda consigo.
+                          </p>
+                          <a href="#">No disponible</a>
+                        </div>
+                      </div>
+                      <div class="libro Romántica" id="14">
+                        <img
+                          src="img/libros/cruel.jpg"
+                          alt="¿Porque eres tan cruel?"
+                          title="Al hacer click se desplegará la sinopsis"
+                        />
+                        <div class="desc">
+                          <p>
+                            <center><b>¿Porque eres tan cruel?</b></center><br />
+                              Un adolescente se enamora de la nueva chica de la clase, una chica peculiar, y el adolescente tendrá 
+                              que superar sus nervios para acercarse a ella.
+                          </p>
+                          <a href="#">No disponible</a>
+                        </div>
+                      </div>           
+                    <div
+                    class="libro Suspense"
+                    id="15"
+                    title="Al hacer click se desplegará la sinopsis"
+                    >
+                        <img
+                            src="img/libros/Escribeme.jpg"
+                            alt="Escribeme"
+                        />
+                        <div class="desc">
+                            <p>
+                            <center><b>Escribeme</b></center><br />
+                              Una chica encuentra un cuaderno en la biblioteca, pero no puede devolverlo a su dueño.
+                            </p>
+                            <a href="#">No disponible</a>
+                        </div>
+                    </div>
+
+                    <div
+                    class="libro Suspense"
+                    id="16"
+                    title="Al hacer click se desplegará la sinopsis"
+                    >
+                        <img
+                            src="img/libros/Experimento.jpg"
+                            alt="Experimento Mortem"
+                        />
+                        <div class="desc">
+                            <p>
+                            <center><b>Experimento M.O.R.T.E.M</b></center><br />
+                              Todos los alumnos de un instituto se despiertan dentro de una 
+                              cúpula extraña, un cristal separa los dos generos, y estarán 
+                              obligados a luchar entre ellos para sobrevivir.
+                            </p>
+                            <a href="https://www.wattpad.com/story/259754156-experimento-m-o-r-t-e-m" target="_blank">Leeme</a>
+                        </div>
+                    </div>
+
+                    <div
+                    class="libro Terror"
+                    id="17"
+                    title="Al hacer click se desplegará la sinopsis"
+                    >
+                        <img
+                            src="img/libros/Pesadilla.jpg"
+                            alt="Pesadillas"
+                        />
+                        <div class="desc">
+                            <p>
+                            <center><b>Pesadillas</b></center><br />
+                            Un conjunto de relatos cortos con sus propias ilustraciones, cada semana se irá actualizando.
+
+                            </p>
+                            <a href="https://www.wattpad.com/story/260661882-pesadillas" target="_blank">Leeme</a>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+    </section>
+    <footer>
+      <p>Web realizada por Ángel Lluís Novo fernando</p>
+      <p>Copyright 2021-2021</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+/* Se mantiene debajo del libro */
+.desc {
+    position: absolute;
+    width: 130px;
+    background-color: #d1d1d1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

@@ -1,0 +1,91 @@
+#container {
+    background-color: rgb(107, 106, 106);
+    width: 90vw;
+    text-align: left;
+}
+
+#contenido {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#novedades {
+    text-align: left;
+}
+
+h1 {
+    padding: 4%;
+    color: #FAFAFF;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: row;
+    /* Se pone debajo si no cabe */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    user-select: none;
+}
+
+h1 {
+    margin: 0;
+    top: 0;
+}
+
+.foto{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* Se pone debajo si no cabe */
+    flex-wrap: wrap;
+    justify-content: space-around;
+} 
+/* Por defecto todos los libros tienen que estar en la posición 5 del eje Z */
+.libro {
+    margin: 5px;
+    width: 160px;
+    z-index: 5;
+}
+
+.libro:hover {
+    cursor: pointer;
+}
+/* Para que de la sensación de continuidad, el contenedor de la descripción, solo tiene los bordes de abajo redondeados */
+.toggleB{
+    /* border: 1px solid #0a0a0a; */
+    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.libro img {
+    width: 100%;
+}
+
+.libro .desc{
+    padding: 15px;
+    text-align: left;
+}
+
+
+nav ul li {
+    height: 50px;
+}
+
+nav ul li:not(#img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img {
+    height: 50px;
+    background-color: lightgray;
+    border-radius: 10px;
+    cursor: default;
+}
+/* Todos los elementos de la lista menos la imagen, al hacer hover, obtiene una linea debajo para identificar que se puede hacer click */
+nav ul li:not(#img):hover,
+.activeNav {
+    text-decoration: underline;
+}

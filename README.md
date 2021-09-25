@@ -1,2 +1,5 @@
-# Annubis
-Una galeria de libros (CSS y JQuery)
+# annubis
+
+jquery,
+css,
+html
